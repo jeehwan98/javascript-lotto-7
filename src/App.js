@@ -1,8 +1,9 @@
-import { Console } from "@woowacourse/mission-utils";
+import { QUERY } from "./util/constant.js";
+import { readUserInput } from "./util/input.js";
 
 class App {
   async run() {
-    const inputtedAmount = await Console.readLineAsync('구입금액을 입력해 주세요.\n');
+    const inputtedAmount = await readUserInput(QUERY.INPUT_PURCHASE_AMOUNT);
     console.log('inputtedString', inputtedAmount);
   }
 }
