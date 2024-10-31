@@ -1,4 +1,4 @@
-export const QUERY = Object.freeze({
+const QUERY = Object.freeze({
   INPUT_PURCHASE_AMOUNT: '구입금액을 입력해 주세요.\n',
   WINNING_NUMBERS: '당첨 번호를 입력해 주세요.\n',
   BONUS_NUMBER: '보너스 번호를 입력해 주세요.\n',
@@ -24,9 +24,9 @@ const ERROR = Object.freeze({
   EMPTY_QUERY: '[ERROR] 값을 입력해야 합니다.',
 })
 
-module.exports = {
+export {
   QUERY,
   LOTTO,
   PRIZE,
-  ERROR,
+  ERROR
 };
