@@ -6,5 +6,4 @@ class App {
     console.log('inputtedString', inputtedAmount);
   }
 }
-
 export default App;
